@@ -1,10 +1,10 @@
 const express = require('express')
 const cors = require('cors')
-const blogRouter = require('./blog/blogRoutes')
+const postRouter = require('./posts/postRoutes')
 const server = express()
 
 server.use(express.json())
-server.use('/api/posts', blogRouter)
+server.use('/api/posts', postRouter)
 server.use(cors())
 
 server.get("/", (req, res) => {
