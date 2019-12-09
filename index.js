@@ -15,5 +15,5 @@ const port = 5000
 const host = 'http://localhost.com/'
 
 server.listen(5000, () => {
-  console.log(`Server is running on ${host} ${port}`);
+  console.log(`Server is running on ${host}${port}`);
 });
